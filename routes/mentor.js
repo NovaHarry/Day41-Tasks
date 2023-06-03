@@ -10,7 +10,7 @@ router.get('/', async function(req, res, next) {
   try{
     let mentors = await mentorModel.find();
     res.status(200).send({
-        students,
+        mentors,
         message:"Mentor data fetched successfully"
     }
     )
